@@ -1,12 +1,12 @@
 
 <h3 align="center">
-  Desafio React IFood
+  Desafio Node Locadora de Filmes
 </h3>
 
 
 ## :rocket: Sobre o desafio
 
-um aplicativo da web chamado Spotifood usado para exibir as listas de reprodução preferidas dos clientes do iFood.
+um aplicativo de um sistema de uma locadora de filmes.
 
 ### Utilizando API Node Spotify 
 
@@ -19,31 +19,66 @@ um aplicativo da web chamado Spotifood usado para exibir as listas de reproduç�
 - **`Iniciar o Node`**:  Para iniciar o Node executar o seguinte comando, vai estar rodando na porta 8888  
 
 ```js
-  yarn start
+  yarn dev:server
 ```
 
-### Utilizando o React 
 
-- **`Instalar as dependecias`**:  Para instalar as dependecias do React executar o seguinte comando
-
-```js
-  yarn 
-```
-
-- **`Iniciar o React`**:  Para iniciar o React executar o seguinte comando, vai estar rodando na porta 3000 
-
-```js
-  yarn start
-```
 
 
 ### Funcionalidades da aplicação
 
-Para utilizar a aplicação e necessario criar uma conta no Spotify. 
+
+- **`Criar Novo usuario`**:  Para criar novo usuario http://localhost:3333/users
+
+```js
+  {
+		"name": "Guilherme",
+		"email": "gui@gui.com.br",
+		"password": "1234"
+
+	}
+```
 
 
-## Solução do desafio
+- **`Autenticação de Sessão `**:  Para validação da sessão  http://localhost:3333/sessions
 
-<a href="https://youtu.be/LdQ2CguxKMo" target="_blank" align="center">
-    Link
-</a>
+```js
+  {
+		"email": "gui@gui.com",
+		"password": "1234"
+  }
+
+  Resposta
+
+{
+		"user": {
+			"id": 4,
+			"name": "Guilherme",
+			"email": "gui@gui.com",
+			"created_at": "2020-12-04T22:22:53.708Z",
+			"updated_at": "2020-12-04T22:22:53.708Z"
+		},
+		"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MDc1MzEwNDMsImV4cCI6MTYwNzYxNzQ0Mywic3ViIjoiNCJ9._iCbrEEAMJpulRINUgNcgWZUHzgf3t_Np8Q7hK73Ozg"
+	}
+
+```
+
+
+
+- **`Criar Novo usuario`**:  Para criação de novos filmes http://localhost:3333/movie
+     A Autenticação do token vai no headers da aplicação         
+```js
+    
+ [
+		{
+			"title": "A espera de um milagre",
+			"director": "diretor x"
+		},
+		{
+			"title": "A espera de um milagre",
+			"director": "diretor x"
+		}
+
+	]
+```
+
