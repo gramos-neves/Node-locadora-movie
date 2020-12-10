@@ -36,8 +36,8 @@ Caso estive usando docker pode usar esse comando para criar o banco de dados
 Criar o schema com nome <Strong>locadora</Strong> antes de executar o comando a baixo<br>
 Criar o Usuario no Mysql para o acesso externo 
 <br>
-Usuario: locadora
-Senha: Myqlloc100
+<Strong>Usuario:</Strong> locadora<br>
+<Strong>Senha:</Strong> Myqlloc100
  
 
 ```js
@@ -50,8 +50,9 @@ Senha: Myqlloc100
 ### Funcionalidades da aplicação
 
 
-- **`Criar Novo usuario`**:  Para criar novo usuario Método Post: http://localhost:3333/users
-
+- **`Criar Novo usuario`**:  Para criar novo usuario Método Post: http://localhost:3333/users<br>
+ Enviar no corpo <Strong>name</Strong>, <Strong>email</Strong>, <Strong>password </Strong> <br>
+ Exemplo
 ```js
   {
    "name":"Guilherme",
@@ -62,6 +63,8 @@ Senha: Myqlloc100
 
 
 - **`Autenticação de Sessão `**:  Para validação da sessão Método Post:  http://localhost:3333/sessions
+ Enviar no corpo <Strong>name</Strong>, <Strong>email</Strong> <br>
+ Exemplo
 
 ```js
 {
@@ -86,8 +89,10 @@ Senha: Myqlloc100
 
 
 - **`Criar Novo Filme`**:  Para criação de novos filmes Método Post: http://localhost:3333/movie <br>
-     para acessar precisa da validação do token, o mesmo vai no headers da chamada.
-     Authorization token
+     Enviar no corpo <Strong>title</Strong>, <Strong>director</Strong> <br>
+     para acessar precisa da validação do token, o mesmo vai no headers da chamada.<br>
+     Authorization token <br>
+     Exemplo
 ```js
   [
     {
@@ -103,7 +108,7 @@ Senha: Myqlloc100
 
 
 - **`Lista filmes disponiveis`**:  Para acessar lista de filmes disponiveis Método Get: http://localhost:3333/movie <br>
-     para acessar precisa da validação do token, o mesmo vai no headers da chamada.
+     para acessar precisa da validação do token, o mesmo vai no headers da chamada.<br>
      Authorization token
 ```js
     Resposta
@@ -134,17 +139,18 @@ Senha: Myqlloc100
 
 
 - **`Buscar filmes`**:  Para buscar de filmes disponiveis por titulo Método Post: http://localhost:3333/movie <br>
-     para acessar precisa da validação do token, o mesmo vai no headers da chamada.
+     Enviar como parametro <Strong>title</Strong>.<br>
+     para acessar precisa da validação do token, o mesmo vai no headers da chamada.<br>
      Authorization token
 ```js
        params title
-
 ```
 
 
 
 - **`Alugar filmes`**:  Para alugar um filmes disponiveis Método Post: http://localhost:3333/rents <br>
-     para acessar precisa da validação do token, o mesmo vai no headers da chamada.
+     Enviar no corpo <Strong>id_movie</Strong>. que é o id da tabela movie  <br>
+     para acessar precisa da validação do token, o mesmo vai no headers da chamada.<br>
      Authorization token
 ```js
    [
@@ -179,7 +185,7 @@ Senha: Myqlloc100
 
 
 - **`Listar filmes alugados`**:  Para Listar filmes alugados Método Get: http://localhost:3333/rents <br>
-     para acessar precisa da validação do token, o mesmo vai no headers da chamada.
+     para acessar precisa da validação do token, o mesmo vai no headers da chamada. <br>
      Authorization token
 ```js
    Resposta
@@ -204,7 +210,8 @@ Senha: Myqlloc100
 
 
 - **`Devolver filmes`**:  Para devolver um ou mais filmes Método Post: http://localhost:3333/rents/devolution <br>
-     para acessar precisa da validação do token, o mesmo vai no headers da chamada.
+     Enviar no corpo <Strong>id</Strong>. que é o id da tabela rent.  <br>
+     para acessar precisa da validação do token, o mesmo vai no headers da chamada.<br>
      Authorization token
 ```js
    [
