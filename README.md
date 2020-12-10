@@ -23,6 +23,25 @@ um aplicativo de um sistema de uma locadora de filmes.
 ```
 
 
+### Criação do banco de dados Mysql
+
+
+Caso estive usando docker pode usar esse comando para criar o banco de dados
+
+```js
+  docker run --name locadora-mysql -e MYSQL_ROOT_PASSWORD=myqlloc  -p 3306:3306 -d mysql 
+```
+
+
+Criar o schema com nome <Strong>locadora</Strong> antes de executar o comando a baixo
+ 
+```js
+  yarn typeorm migration:run
+```
+
+
+
+
 ### Funcionalidades da aplicação
 
 
@@ -31,7 +50,7 @@ um aplicativo de um sistema de uma locadora de filmes.
 ```js
   {
    "name":"Guilherme",
-   "email":"gui@gui.com.br",
+   "email":"gui@gui.com",
    "password":"1234"
   }
 ```
@@ -66,14 +85,14 @@ um aplicativo de um sistema de uma locadora de filmes.
      Authorization token
 ```js
   [
-   {
-      "title":"A espera de um milagre",
-      "director":"diretor x"
-   },
-   {
-      "title":"A espera de um milagre",
-      "director":"diretor x"
-   }
+    {
+        "title":"A espera de um milagre",
+        "director":"diretor x"
+    },
+    {
+        "title":"A espera de um milagre",
+        "director":"diretor x"
+    }
   ]
 ```
 
@@ -124,12 +143,12 @@ um aplicativo de um sistema de uma locadora de filmes.
      Authorization token
 ```js
    [
-    {
-        "id_movie":1
-    },
-    {
-        "id_movie":2
-    }
+      {
+          "id_movie":1
+      },
+      {
+          "id_movie":2
+      }
    ]
 
     Resposta
