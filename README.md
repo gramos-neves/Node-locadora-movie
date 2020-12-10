@@ -23,8 +23,6 @@ um aplicativo de um sistema de uma locadora de filmes.
 ```
 
 
-
-
 ### Funcionalidades da aplicação
 
 
@@ -62,7 +60,6 @@ um aplicativo de um sistema de uma locadora de filmes.
 	}
 
 ```
-
 
 
 - **`Criar Novo Filme`**:  Para criação de novos filmes Metodo Post: http://localhost:3333/movie 
@@ -125,15 +122,72 @@ um aplicativo de um sistema de uma locadora de filmes.
 
 
 
-- **`Alugar filmes`**:  Para alugar um filmes disponiveis Metodo Post: http://localhost:3333/movie 
+- **`Alugar filmes`**:  Para alugar um filmes disponiveis Metodo Post: http://localhost:3333/rents
      para acessar precisa da validação do token, o mesmo vai no headers da chamada.
      Authorization token
 ```js
      [
 		  {"id_movie": 1},
 		  {"id_movie": 2}
+    ]
+
+    Resposta
+
+    [
+    {
+        "id_movie": 1,
+        "id_user": 4,
+        "id": 13,
+        "created_at": "2020-12-09T22:24:24.693Z",
+        "updated_at": "2020-12-09T22:24:24.693Z"
+    },
+    {
+        "id_movie": 2,
+        "id_user": 4,
+        "id": 14,
+        "created_at": "2020-12-09T22:24:24.712Z",
+        "updated_at": "2020-12-09T22:24:24.712Z"
+    }
+]
+
+```
+
+
+
+- **`Listar filmes alugados`**:  Para Listar filmes alugados Metodo Get: http://localhost:3333/rents
+     para acessar precisa da validação do token, o mesmo vai no headers da chamada.
+     Authorization token
+```js
+   Resposta
+  [
+    {
+        "id": 13,
+        "id_movie": 1,
+        "id_user": 4,
+        "created_at": "2020-12-09T22:24:24.693Z",
+        "updated_at": "2020-12-09T22:24:24.693Z"
+    },
+    {
+        "id": 14,
+        "id_movie": 2,
+        "id_user": 4,
+        "created_at": "2020-12-09T22:24:24.712Z",
+        "updated_at": "2020-12-09T22:24:24.712Z"
+    }
+]
+
+```
+
+
+
+- **`Devolver filmes`**:  Para devolver um ou mais filmes Metodo Post: http://localhost:3333/rents/devolution 
+     para acessar precisa da validação do token, o mesmo vai no headers da chamada.
+     Authorization token
+```js
+     [
+		  {"id": 13},
+		  {"id": 14}
 
 		]
 
 ```
-
