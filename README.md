@@ -36,6 +36,7 @@ Caso estive usando docker pode usar esse comando para criar o banco de dados
 Criar o schema com nome <Strong>locadora</Strong> antes de executar o comando a baixo<br>
 Criar o Usuario no Mysql para o acesso externo 
 <br>
+<br>
 <Strong>Usuario:</Strong> locadora<br>
 <Strong>Senha:</Strong> Myqlloc100
  
@@ -43,7 +44,6 @@ Criar o Usuario no Mysql para o acesso externo
 ```js
   yarn typeorm migration:run
 ```
-
 
 
 
@@ -62,7 +62,7 @@ Criar o Usuario no Mysql para o acesso externo
 ```
 
 
-- **`Autenticação de Sessão `**:  Para validação da sessão Método Post:  http://localhost:3333/sessions
+- **`Autenticação de Sessão `**:  Para validação da sessão Método Post:  http://localhost:3333/sessions<br>
  Enviar no corpo <Strong>name</Strong>, <Strong>email</Strong> <br>
  Exemplo
 
@@ -97,11 +97,11 @@ Criar o Usuario no Mysql para o acesso externo
   [
     {
         "title":"A espera de um milagre",
-        "director":"diretor x"
+        "director":"Frank Darabont"
     },
     {
-        "title":"A espera de um milagre",
-        "director":"diretor x"
+        "title":"Deadpool",
+        "director":"David Leitch"
     }
   ]
 ```
@@ -116,21 +116,21 @@ Criar o Usuario no Mysql para o acesso externo
         {
             "id": 15,
             "title": "A espera de um milagre",
-            "director": "diretor x",
+            "director": "Frank Darabont",
             "created_at": "2020-12-09T08:02:22.385Z",
             "updated_at": "2020-12-09T08:02:22.385Z"
         },
         {
             "id": 16,
-            "title": "A espera de um milagre",
-            "director": "diretor x",
+            "title": "Deadpool",
+            "director": "Tim Miller",
             "created_at": "2020-12-09T08:02:22.398Z",
             "updated_at": "2020-12-09T08:02:22.398Z"
         },
         {
             "id": 17,
-            "title": "A espera de um milagre",
-            "director": "diretor x",
+            "title": "Deadpool 2",
+            "director": "David Leitch",
             "created_at": "2020-12-09T08:02:22.403Z",
             "updated_at": "2020-12-09T08:02:22.403Z"
         }
