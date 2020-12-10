@@ -16,12 +16,6 @@ um aplicativo de um sistema de uma locadora de filmes.
   yarn 
 ```
 
-- **`Iniciar o Node`**:  Para iniciar o Node executar o seguinte comando, vai estar rodando na porta 3333  
-
-```js
-  yarn dev:server
-```
-
 
 ### Criação do banco de dados Mysql
 
@@ -38,13 +32,20 @@ Criar o Usuario no Mysql para o acesso externo
 <br>
 <br>
 <Strong>Usuario:</Strong> locadora<br>
-<Strong>Senha:</Strong> Myqlloc100
+<Strong>Senha:</Strong> Myqlloc100<br>
  
 
+Executar o comando para criação das tabelas.
 ```js
   yarn typeorm migration:run
 ```
 
+
+- **`Iniciar o Node`**:  Para iniciar o Node executar o seguinte comando, vai estar rodando na porta 3333  
+
+```js
+  yarn dev:server
+```
 
 
 ### Funcionalidades da aplicação

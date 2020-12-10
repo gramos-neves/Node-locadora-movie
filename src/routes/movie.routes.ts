@@ -18,7 +18,6 @@ movieRouter.post('/', async (request: Request, response: Response) => {
         return response.status(400).json({ error: err.message })
     }
 
-
 })
 
 //Lista todos os filmes
@@ -35,7 +34,7 @@ movieRouter.get('/', async (request: Request, response: Response) => {
 })
 
 
-//lista de filmes
+//lista de filmes por tiulo
 movieRouter.get('/search', async (request: Request, response: Response) => {
     try {
 
@@ -48,6 +47,7 @@ movieRouter.get('/search', async (request: Request, response: Response) => {
         return response.status(400).json({ error: err.message })
     }
 })
+
 
 
 

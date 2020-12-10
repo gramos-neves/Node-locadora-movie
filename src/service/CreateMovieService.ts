@@ -15,7 +15,6 @@ class CreateUserService {
         const movie = movieRepository.create(data);
         await movieRepository.save(movie);
         return movie
-
     }
 
     //listar filmes disponiveis
