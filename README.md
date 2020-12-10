@@ -33,8 +33,13 @@ Caso estive usando docker pode usar esse comando para criar o banco de dados
 ```
 
 
-Criar o schema com nome <Strong>locadora</Strong> antes de executar o comando a baixo
+Criar o schema com nome <Strong>locadora</Strong> antes de executar o comando a baixo<br>
+Criar o Usuario no Mysql para o acesso externo 
+<br>
+Usuario: locadora
+Senha: Myqlloc100
  
+
 ```js
   yarn typeorm migration:run
 ```
@@ -80,7 +85,7 @@ Criar o schema com nome <Strong>locadora</Strong> antes de executar o comando a 
 ```
 
 
-- **`Criar Novo Filme`**:  Para criação de novos filmes Método Post: http://localhost:3333/movie 
+- **`Criar Novo Filme`**:  Para criação de novos filmes Método Post: http://localhost:3333/movie <br>
      para acessar precisa da validação do token, o mesmo vai no headers da chamada.
      Authorization token
 ```js
@@ -97,7 +102,7 @@ Criar o schema com nome <Strong>locadora</Strong> antes de executar o comando a 
 ```
 
 
-- **`Lista filmes disponiveis`**:  Para acessar lista de filmes disponiveis Método Get: http://localhost:3333/movie 
+- **`Lista filmes disponiveis`**:  Para acessar lista de filmes disponiveis Método Get: http://localhost:3333/movie <br>
      para acessar precisa da validação do token, o mesmo vai no headers da chamada.
      Authorization token
 ```js
@@ -128,7 +133,7 @@ Criar o schema com nome <Strong>locadora</Strong> antes de executar o comando a 
 ```
 
 
-- **`Buscar filmes`**:  Para buscar de filmes disponiveis por titulo Método Post: http://localhost:3333/movie 
+- **`Buscar filmes`**:  Para buscar de filmes disponiveis por titulo Método Post: http://localhost:3333/movie <br>
      para acessar precisa da validação do token, o mesmo vai no headers da chamada.
      Authorization token
 ```js
@@ -138,7 +143,7 @@ Criar o schema com nome <Strong>locadora</Strong> antes de executar o comando a 
 
 
 
-- **`Alugar filmes`**:  Para alugar um filmes disponiveis Método Post: http://localhost:3333/rents
+- **`Alugar filmes`**:  Para alugar um filmes disponiveis Método Post: http://localhost:3333/rents <br>
      para acessar precisa da validação do token, o mesmo vai no headers da chamada.
      Authorization token
 ```js
@@ -173,7 +178,7 @@ Criar o schema com nome <Strong>locadora</Strong> antes de executar o comando a 
 
 
 
-- **`Listar filmes alugados`**:  Para Listar filmes alugados Método Get: http://localhost:3333/rents
+- **`Listar filmes alugados`**:  Para Listar filmes alugados Método Get: http://localhost:3333/rents <br>
      para acessar precisa da validação do token, o mesmo vai no headers da chamada.
      Authorization token
 ```js
@@ -198,7 +203,7 @@ Criar o schema com nome <Strong>locadora</Strong> antes de executar o comando a 
 
 
 
-- **`Devolver filmes`**:  Para devolver um ou mais filmes Método Post: http://localhost:3333/rents/devolution 
+- **`Devolver filmes`**:  Para devolver um ou mais filmes Método Post: http://localhost:3333/rents/devolution <br>
      para acessar precisa da validação do token, o mesmo vai no headers da chamada.
      Authorization token
 ```js
