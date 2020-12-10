@@ -8,7 +8,7 @@
 
 um aplicativo de um sistema de uma locadora de filmes.
 
-### Utilizando API Node Locuplus
+### Utilizando API Node Locodora de Filmes
 
 - **`Instalar as dependecias`**:  Para instalar as dependecias do Node executar o seguinte comando
 
@@ -26,24 +26,24 @@ um aplicativo de um sistema de uma locadora de filmes.
 ### Funcionalidades da aplicação
 
 
-- **`Criar Novo usuario`**:  Para criar novo usuario Metodo Post: http://localhost:3333/users
+- **`Criar Novo usuario`**:  Para criar novo usuario Método Post: http://localhost:3333/users
 
 ```js
   {
-    "name": "Guilherme",
-		"email": "gui@gui.com.br",
-		"password": "1234"
-  }
+   "name":"Guilherme",
+   "email":"gui@gui.com.br",
+   "password":"1234"
+}
 ```
 
 
-- **`Autenticação de Sessão `**:  Para validação da sessão Metodo Post:  http://localhost:3333/sessions
+- **`Autenticação de Sessão `**:  Para validação da sessão Método Post:  http://localhost:3333/sessions
 
 ```js
-  {
-		"email": "gui@gui.com",
-		"password": "1234"
-   }
+{
+   "email":"gui@gui.com",
+   "password":"1234"
+}
 
   Resposta
 
@@ -61,24 +61,24 @@ um aplicativo de um sistema de uma locadora de filmes.
 ```
 
 
-- **`Criar Novo Filme`**:  Para criação de novos filmes Metodo Post: http://localhost:3333/movie 
+- **`Criar Novo Filme`**:  Para criação de novos filmes Método Post: http://localhost:3333/movie 
      para acessar precisa da validação do token, o mesmo vai no headers da chamada.
      Authorization token
 ```js
-    [
-      {
-        "title": "A espera de um milagre",
-        "director": "diretor x"
-      },
-      {
-        "title": "A espera de um milagre",
-        "director": "diretor x"
-      }
-     ]
+  [
+   {
+      "title":"A espera de um milagre",
+      "director":"diretor x"
+   },
+   {
+      "title":"A espera de um milagre",
+      "director":"diretor x"
+   }
+]
 ```
 
 
-- **`Lista filmes disponiveis`**:  Para acessar lista de filmes disponiveis Metodo Get: http://localhost:3333/movie 
+- **`Lista filmes disponiveis`**:  Para acessar lista de filmes disponiveis Método Get: http://localhost:3333/movie 
      para acessar precisa da validação do token, o mesmo vai no headers da chamada.
      Authorization token
 ```js
@@ -109,7 +109,7 @@ um aplicativo de um sistema de uma locadora de filmes.
 ```
 
 
-- **`Buscar filmes`**:  Para buscar de filmes disponiveis por titulo Metodo Post: http://localhost:3333/movie 
+- **`Buscar filmes`**:  Para buscar de filmes disponiveis por titulo Método Post: http://localhost:3333/movie 
      para acessar precisa da validação do token, o mesmo vai no headers da chamada.
      Authorization token
 ```js
@@ -119,14 +119,18 @@ um aplicativo de um sistema de uma locadora de filmes.
 
 
 
-- **`Alugar filmes`**:  Para alugar um filmes disponiveis Metodo Post: http://localhost:3333/rents
+- **`Alugar filmes`**:  Para alugar um filmes disponiveis Método Post: http://localhost:3333/rents
      para acessar precisa da validação do token, o mesmo vai no headers da chamada.
      Authorization token
 ```js
-     [
-		  {"id_movie": 1},
-		  {"id_movie": 2}
-     ]
+   [
+   {
+      "id_movie":1
+   },
+   {
+      "id_movie":2
+   }
+]
 
     Resposta
 
@@ -150,7 +154,7 @@ um aplicativo de um sistema de uma locadora de filmes.
 
 
 
-- **`Listar filmes alugados`**:  Para Listar filmes alugados Metodo Get: http://localhost:3333/rents
+- **`Listar filmes alugados`**:  Para Listar filmes alugados Método Get: http://localhost:3333/rents
      para acessar precisa da validação do token, o mesmo vai no headers da chamada.
      Authorization token
 ```js
@@ -175,12 +179,16 @@ um aplicativo de um sistema de uma locadora de filmes.
 
 
 
-- **`Devolver filmes`**:  Para devolver um ou mais filmes Metodo Post: http://localhost:3333/rents/devolution 
+- **`Devolver filmes`**:  Para devolver um ou mais filmes Método Post: http://localhost:3333/rents/devolution 
      para acessar precisa da validação do token, o mesmo vai no headers da chamada.
      Authorization token
 ```js
-    [
-      {"id": 13},
-      {"id": 14}
-    ]
+   [
+   {
+      "id":13
+   },
+   {
+      "id":14
+   }
+]
 ```
