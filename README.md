@@ -28,7 +28,7 @@ um aplicativo de um sistema de uma locadora de filmes.
 ### Funcionalidades da aplicação
 
 
-- **`Criar Novo usuario`**:  Para criar novo usuario http://localhost:3333/users
+- **`Criar Novo usuario`**:  Para criar novo usuario Metodo Post: http://localhost:3333/users
 
 ```js
   {
@@ -40,7 +40,7 @@ um aplicativo de um sistema de uma locadora de filmes.
 ```
 
 
-- **`Autenticação de Sessão `**:  Para validação da sessão  http://localhost:3333/sessions
+- **`Autenticação de Sessão `**:  Para validação da sessão Metodo Post:  http://localhost:3333/sessions
 
 ```js
   {
@@ -65,8 +65,9 @@ um aplicativo de um sistema de uma locadora de filmes.
 
 
 
-- **`Criar Novo usuario`**:  Para criação de novos filmes http://localhost:3333/movie
-     A Autenticação do token vai no headers da aplicação         
+- **`Criar Novo Filme`**:  Para criação de novos filmes Metodo Post: http://localhost:3333/movie 
+     para acessar precisa da validação do token, o mesmo vai no headers da chamada.
+     Authorization token
 ```js
     
  [
@@ -80,5 +81,59 @@ um aplicativo de um sistema de uma locadora de filmes.
 		}
 
 	]
+```
+
+
+- **`Lista filmes disponiveis`**:  Para acessar lista de filmes disponiveis Metodo Get: http://localhost:3333/movie 
+     para acessar precisa da validação do token, o mesmo vai no headers da chamada.
+     Authorization token
+```js
+    Resposta
+ [
+    {
+        "id": 15,
+        "title": "A espera de um milagre",
+        "director": "diretor x",
+        "created_at": "2020-12-09T08:02:22.385Z",
+        "updated_at": "2020-12-09T08:02:22.385Z"
+    },
+    {
+        "id": 16,
+        "title": "A espera de um milagre",
+        "director": "diretor x",
+        "created_at": "2020-12-09T08:02:22.398Z",
+        "updated_at": "2020-12-09T08:02:22.398Z"
+    },
+    {
+        "id": 17,
+        "title": "A espera de um milagre",
+        "director": "diretor x",
+        "created_at": "2020-12-09T08:02:22.403Z",
+        "updated_at": "2020-12-09T08:02:22.403Z"
+    }
+]
+```
+
+
+- **`Buscar filmes`**:  Para buscar de filmes disponiveis por titulo Metodo Post: http://localhost:3333/movie 
+     para acessar precisa da validação do token, o mesmo vai no headers da chamada.
+     Authorization token
+```js
+       params title
+
+```
+
+
+
+- **`Alugar filmes`**:  Para alugar um filmes disponiveis Metodo Post: http://localhost:3333/movie 
+     para acessar precisa da validação do token, o mesmo vai no headers da chamada.
+     Authorization token
+```js
+     [
+		  {"id_movie": 1},
+		  {"id_movie": 2}
+
+		]
+
 ```
 
