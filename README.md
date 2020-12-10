@@ -48,6 +48,11 @@ Executar o comando para criação das tabelas.
 ```
 
 
+- **`Informação Inicial`**:  Caso queira algums dados inicial pode utillizar o Metodo get http://localhost:3333/initial
+   vai cadastrar algums filmes.
+
+
+
 ### Funcionalidades da aplicação
 
 
