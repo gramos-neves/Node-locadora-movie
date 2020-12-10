@@ -33,7 +33,6 @@ um aplicativo de um sistema de uma locadora de filmes.
 		"name": "Guilherme",
 		"email": "gui@gui.com.br",
 		"password": "1234"
-
 	}
 ```
 
@@ -44,7 +43,7 @@ um aplicativo de um sistema de uma locadora de filmes.
   {
 		"email": "gui@gui.com",
 		"password": "1234"
-  }
+   }
 
   Resposta
 
@@ -57,7 +56,7 @@ um aplicativo de um sistema de uma locadora de filmes.
 			"updated_at": "2020-12-04T22:22:53.708Z"
 		},
 		"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MDc1MzEwNDMsImV4cCI6MTYwNzYxNzQ0Mywic3ViIjoiNCJ9._iCbrEEAMJpulRINUgNcgWZUHzgf3t_Np8Q7hK73Ozg"
-	}
+	 }
 
 ```
 
@@ -66,7 +65,6 @@ um aplicativo de um sistema de uma locadora de filmes.
      para acessar precisa da validação do token, o mesmo vai no headers da chamada.
      Authorization token
 ```js
-    
     [
       {
         "title": "A espera de um milagre",
@@ -77,7 +75,7 @@ um aplicativo de um sistema de uma locadora de filmes.
         "director": "diretor x"
       }
 
-    ]
+     ]
 ```
 
 
@@ -149,7 +147,6 @@ um aplicativo de um sistema de uma locadora de filmes.
           "updated_at": "2020-12-09T22:24:24.712Z"
       }
    ]
-
 ```
 
 
@@ -175,7 +172,6 @@ um aplicativo de um sistema de uma locadora de filmes.
         "updated_at": "2020-12-09T22:24:24.712Z"
     }
   ]
-
 ```
 
 
@@ -184,11 +180,8 @@ um aplicativo de um sistema de uma locadora de filmes.
      para acessar precisa da validação do token, o mesmo vai no headers da chamada.
      Authorization token
 ```js
-    
     [
 		  {"id": 13},
-		  {"id": 14}
-
-		]
-
+      {"id": 14}
+    ]
 ```
