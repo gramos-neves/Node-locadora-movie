@@ -33,7 +33,7 @@ um aplicativo de um sistema de uma locadora de filmes.
    "name":"Guilherme",
    "email":"gui@gui.com.br",
    "password":"1234"
-}
+  }
 ```
 
 
@@ -74,7 +74,7 @@ um aplicativo de um sistema de uma locadora de filmes.
       "title":"A espera de um milagre",
       "director":"diretor x"
    }
-]
+  ]
 ```
 
 
@@ -124,13 +124,13 @@ um aplicativo de um sistema de uma locadora de filmes.
      Authorization token
 ```js
    [
-   {
-      "id_movie":1
-   },
-   {
-      "id_movie":2
-   }
-]
+    {
+        "id_movie":1
+    },
+    {
+        "id_movie":2
+    }
+   ]
 
     Resposta
 
@@ -184,11 +184,11 @@ um aplicativo de um sistema de uma locadora de filmes.
      Authorization token
 ```js
    [
-   {
-      "id":13
-   },
-   {
-      "id":14
-   }
-]
+      {
+          "id":13
+      },
+      {
+          "id":14
+      }
+   ]
 ```
