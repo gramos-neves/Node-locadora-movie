@@ -48,7 +48,7 @@ um aplicativo de um sistema de uma locadora de filmes.
 
   Resposta
 
-{
+  {
 		"user": {
 			"id": 4,
 			"name": "Guilherme",
@@ -67,17 +67,17 @@ um aplicativo de um sistema de uma locadora de filmes.
      Authorization token
 ```js
     
- [
-		{
-			"title": "A espera de um milagre",
-			"director": "diretor x"
-		},
-		{
-			"title": "A espera de um milagre",
-			"director": "diretor x"
-		}
+    [
+      {
+        "title": "A espera de um milagre",
+        "director": "diretor x"
+      },
+      {
+        "title": "A espera de um milagre",
+        "director": "diretor x"
+      }
 
-	]
+    ]
 ```
 
 
@@ -86,29 +86,29 @@ um aplicativo de um sistema de uma locadora de filmes.
      Authorization token
 ```js
     Resposta
- [
-    {
-        "id": 15,
-        "title": "A espera de um milagre",
-        "director": "diretor x",
-        "created_at": "2020-12-09T08:02:22.385Z",
-        "updated_at": "2020-12-09T08:02:22.385Z"
-    },
-    {
-        "id": 16,
-        "title": "A espera de um milagre",
-        "director": "diretor x",
-        "created_at": "2020-12-09T08:02:22.398Z",
-        "updated_at": "2020-12-09T08:02:22.398Z"
-    },
-    {
-        "id": 17,
-        "title": "A espera de um milagre",
-        "director": "diretor x",
-        "created_at": "2020-12-09T08:02:22.403Z",
-        "updated_at": "2020-12-09T08:02:22.403Z"
-    }
-]
+    [
+        {
+            "id": 15,
+            "title": "A espera de um milagre",
+            "director": "diretor x",
+            "created_at": "2020-12-09T08:02:22.385Z",
+            "updated_at": "2020-12-09T08:02:22.385Z"
+        },
+        {
+            "id": 16,
+            "title": "A espera de um milagre",
+            "director": "diretor x",
+            "created_at": "2020-12-09T08:02:22.398Z",
+            "updated_at": "2020-12-09T08:02:22.398Z"
+        },
+        {
+            "id": 17,
+            "title": "A espera de um milagre",
+            "director": "diretor x",
+            "created_at": "2020-12-09T08:02:22.403Z",
+            "updated_at": "2020-12-09T08:02:22.403Z"
+        }
+    ]
 ```
 
 
@@ -129,26 +129,26 @@ um aplicativo de um sistema de uma locadora de filmes.
      [
 		  {"id_movie": 1},
 		  {"id_movie": 2}
-    ]
+     ]
 
     Resposta
 
     [
-    {
-        "id_movie": 1,
-        "id_user": 4,
-        "id": 13,
-        "created_at": "2020-12-09T22:24:24.693Z",
-        "updated_at": "2020-12-09T22:24:24.693Z"
-    },
-    {
-        "id_movie": 2,
-        "id_user": 4,
-        "id": 14,
-        "created_at": "2020-12-09T22:24:24.712Z",
-        "updated_at": "2020-12-09T22:24:24.712Z"
-    }
-]
+      {
+          "id_movie": 1,
+          "id_user": 4,
+          "id": 13,
+          "created_at": "2020-12-09T22:24:24.693Z",
+          "updated_at": "2020-12-09T22:24:24.693Z"
+      },
+      {
+          "id_movie": 2,
+          "id_user": 4,
+          "id": 14,
+          "created_at": "2020-12-09T22:24:24.712Z",
+          "updated_at": "2020-12-09T22:24:24.712Z"
+      }
+   ]
 
 ```
 
@@ -174,7 +174,7 @@ um aplicativo de um sistema de uma locadora de filmes.
         "created_at": "2020-12-09T22:24:24.712Z",
         "updated_at": "2020-12-09T22:24:24.712Z"
     }
-]
+  ]
 
 ```
 
@@ -184,7 +184,8 @@ um aplicativo de um sistema de uma locadora de filmes.
      para acessar precisa da validação do token, o mesmo vai no headers da chamada.
      Authorization token
 ```js
-     [
+    
+    [
 		  {"id": 13},
 		  {"id": 14}
 
