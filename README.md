@@ -8,7 +8,7 @@
 
 um aplicativo de um sistema de uma locadora de filmes.
 
-### Utilizando API Node Spotify 
+### Utilizando API Node Locuplus
 
 - **`Instalar as dependecias`**:  Para instalar as dependecias do Node executar o seguinte comando
 
@@ -16,7 +16,7 @@ um aplicativo de um sistema de uma locadora de filmes.
   yarn 
 ```
 
-- **`Iniciar o Node`**:  Para iniciar o Node executar o seguinte comando, vai estar rodando na porta 8888  
+- **`Iniciar o Node`**:  Para iniciar o Node executar o seguinte comando, vai estar rodando na porta 3333  
 
 ```js
   yarn dev:server
@@ -30,10 +30,10 @@ um aplicativo de um sistema de uma locadora de filmes.
 
 ```js
   {
-		"name": "Guilherme",
+    "name": "Guilherme",
 		"email": "gui@gui.com.br",
 		"password": "1234"
-	}
+  }
 ```
 
 
@@ -56,7 +56,7 @@ um aplicativo de um sistema de uma locadora de filmes.
 			"updated_at": "2020-12-04T22:22:53.708Z"
 		},
 		"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MDc1MzEwNDMsImV4cCI6MTYwNzYxNzQ0Mywic3ViIjoiNCJ9._iCbrEEAMJpulRINUgNcgWZUHzgf3t_Np8Q7hK73Ozg"
-	 }
+	}
 
 ```
 
@@ -74,7 +74,6 @@ um aplicativo de um sistema de uma locadora de filmes.
         "title": "A espera de um milagre",
         "director": "diretor x"
       }
-
      ]
 ```
 
@@ -181,7 +180,7 @@ um aplicativo de um sistema de uma locadora de filmes.
      Authorization token
 ```js
     [
-		  {"id": 13},
+      {"id": 13},
       {"id": 14}
     ]
 ```
